@@ -17,3 +17,7 @@ switch(player_number)
 //}
 
 move_and_collide(0,move, Obj_Ceiling)
+
+if(touchingBall){
+	alarm[0] = 120;
+}

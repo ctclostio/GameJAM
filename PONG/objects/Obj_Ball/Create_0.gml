@@ -1,5 +1,7 @@
 /// @description we cock dick
-xdir = choose(1,-1);
-ydir = 1;
-mySpeed = 1
+direction = choose(0,180);
+
+speed = 1;
+
+maxBounceAngle = 75;
 
