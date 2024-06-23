@@ -1,3 +1,4 @@
 /// @description 
 
-direction += 90;
+dy *= -1.05;
+dx *= 1.05

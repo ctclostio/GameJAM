@@ -16,3 +16,4 @@ global.res = {
 window_set_size(global.res.width * global.res.scale, global.res.height * global.res.scale)
 window_center();
 
+

@@ -16,8 +16,5 @@ switch(player_number)
 //	y += move
 //}
 
-move_and_collide(0,move, Obj_Ceiling)
+move_and_collide(0,move*1.5, Obj_Ceiling)
 
-if(touchingBall){
-	alarm[0] = 120;
-}

@@ -1,15 +1,22 @@
 
-if(!other.touchingBall){
-var relativeIntersectY = (other.y+(other.sprite_height/2)) - y;
+if(!touchingPaddle){
+var relativeIntersectY = (other.y) - y;
+var normalizedRelativeIntersectionY = (relativeIntersectY/(other.sprite_height/2));
 
 
-//var normalizedRelativeIntersectionY = (relativeIntersectY/(other.sprite_height/2));
-//var bounceAngle = normalizedRelativeIntersectionY * 75 ;
-
-direction =  ((75-90)/(other.sprite_height/2))*(abs(relativeIntersectY-other.sprite_height/2)) -90
-
-show_debug_message("{0}", direction)
 
 
-other.touchingBall = true;
+dx *= -(1.025);
+dy = (dy - normalizedRelativeIntersectionY)
+
+x += dx/2
+
+
+show_debug_message("norm intersect y {0}, relative Int: {1}", normalizedRelativeIntersectionY, relativeIntersectY )
+
+show_debug_message("dx: {0}, dy {1}", dx, dy )
+
+
+touchingPaddle = true;
+alarm[0] = 10;
 }
