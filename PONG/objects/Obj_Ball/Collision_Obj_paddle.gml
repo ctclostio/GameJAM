@@ -6,7 +6,7 @@ var normalizedRelativeIntersectionY = (relativeIntersectY/(other.sprite_height/2
 
 
 
-dx *= -(1.025);
+dx *= -(1.005);
 dy = (dy - normalizedRelativeIntersectionY)
 
 x += dx/2

@@ -6,7 +6,7 @@
 			room_goto_next()
 	        break;
 	    case rm_mainmenu:
-	        room_goto_next()
+	        instance_create_depth(x,y,-999,obj_title_menu)
 	        break;
 	    case rm_main:
 	        alarm_set(0, 180)
